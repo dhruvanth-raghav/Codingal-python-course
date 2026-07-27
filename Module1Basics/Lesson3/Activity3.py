@@ -1,8 +1,8 @@
-text="dhruvanth"
-print(text)
-text=text[::-1]
-print(text)
+word="dhruvanth"
+print(word)
+word=word[::-1]
+print(word)
 
 
-text="DHRUVANTH"
-print(text.lower())
+word="DHRUVANTH"
+print(word.lower())
