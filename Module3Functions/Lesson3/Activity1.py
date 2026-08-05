@@ -13,7 +13,11 @@ coins_inserted=0
 total_money_inserted=0
 
 while True:
-    coin=int(input("Insert a coin: "))
+    try:
+        coin=int(input("Insert a coin: "))
+    except ValueError:
+        print("invalid coin,Try again with coin:-1, 2, 5, 10")
+        continue
     if coin!=1 and coin!=2 and coin!=5 and coin!=10:
         print("Invalid coin! Try again with coins- 1, 2, 5, 10.\n")
         continue
