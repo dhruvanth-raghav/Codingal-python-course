@@ -8,3 +8,19 @@
 #l=["apples","bananas"]
 #"apples"
 #search(l,t)
+
+fruits=["apples","bananas","apples","grapes","apples"]
+fruit=input("Enter a fruit:")
+def search (list,target):
+    count=0
+
+    for fruit in list:
+        if fruit == target:
+            count +=1
+
+    if count>0:
+        print(f"the fruit -{target}, appeared {count} times")
+    else:
+        print("Could not find the specific fruit")
+
+search(fruits,fruit)    
