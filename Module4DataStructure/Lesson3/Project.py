@@ -30,4 +30,34 @@ cleaned_data={}
 seen_records=[]
 
 for student_id, details in student_data.items():
-    unique_key=(details["name"],details["class"],details["subject"])
+    unique_key=(details["name"],details["Class"],details["subject"])
+
+    if unique_key not in seen_records:
+        seen_records.append(unique_key)
+        cleaned_data[student_id] = details
+ 
+student_data = cleaned_data
+ 
+print("")
+print("After removing duplicate records:")
+print(student_data)
+ 
+# PART 6: Remove one student record using pop()
+removed_student = student_data.pop("id4", "Student not found")
+ 
+print("")
+print("Removed student:")
+print(removed_student)
+ 
+# PART 7: Check the dictionary's length
+print("")
+print("Total student records left:", len(student_data))
+ 
+# PART 8: Iterate through the dictionary
+print("")
+print("===== FINAL STUDENT SUBJECT RECORDS =====")
+ 
+for student_id, details in student_data.items():
+    print(student_id, ":", details)
+ 
+print("==========================================")
