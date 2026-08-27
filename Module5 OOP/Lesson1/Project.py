@@ -1,4 +1,4 @@
-print("===😈SUPER VILLAIN PROFILE BUILDER🦹‍♀️===")
+print("===😈SUPER VILLAIN PROFILE BUILDER⚡===")
 class Supervillain:
     medium = "supervillain"
 
