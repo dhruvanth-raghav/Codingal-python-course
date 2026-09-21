@@ -53,10 +53,8 @@ car = Car(WHITE, 70, 35)
 car.rect.x = 50
 car.rect.y = 300
  
-# Add the car to the sprite group
 all_sprites.add(car)
  
-# Create the game window
 screen = pygame.display.set_mode((600, 400))
 pygame.display.set_caption("Smart Traffic Signal Simulator")
  
