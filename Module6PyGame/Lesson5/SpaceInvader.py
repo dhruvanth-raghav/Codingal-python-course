@@ -2,6 +2,9 @@ import math
 import random
 import pygame
 
+pygame.mixer.init()
+pygame.mixer.music.load("Module6PyGame\Lesson5\music.mp3")
+pygame.mixer.music.play(-1)
 SCREEN_WIDTH = 800
 SCREEM_HEIGHT = 500
 PLAYER_START_X = 370
@@ -43,6 +46,7 @@ for _i in range(num_of_enemies):
     enemyY.append(random.randint(ENEMY_START_Y_MIN, ENEMY_START_Y_MAX))
     enemyX_change.append(ENEMY_SPEED_X)
     enemyY_change.append(ENEMY_SPEED_Y)
+
 
 bulletImage = pygame.image.load(IMAGE_BASE_PATH+'bullet.png')
 bulletX = 0
